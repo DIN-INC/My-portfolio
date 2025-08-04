@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design. inspire. network</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="side-nav">
+      <ul>
+        <li class="close-button" onclick="hideSidebar()">
+          <img src="close.png" alt="close-button" />
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li>
+          <a href="index.html"><h1>DIN</h1></a>
+        </li>
+      </ul>
+      <ul class="nav-right">
+        <li class="hideonmobile"><a href="index.html">Home</a></li>
+        <li class="hideonmobile"><a href="projects.html">Projects</a></li>
+        <li class="hideonmobile"><a href="offers.html">Offers</a></li>
+        <li class="hideonmobile"><a href="contact.html">Contact Me</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <img src="menu.png" alt="" />
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <div class="design">
+          <h2>Design. Inspire. Network.</h2>
+          <div>
+            ~designing elegantly. inspiring fearlessly, networking authentically
+          </div>
+        </div>
+      </section>
+      <h2 class="welcome">Welcome to My World</h2>
+      <section class="hero">
+        <img src="my image2.jpg" />
+        <div class="intro">
+          Hi, I’m DIN—more professionally known as
+          <strong>Oba Sijuola Olukoya</strong>, I’m a web developer with a
+          passion for designing visually striking, user-focused websites. My
+          signature style blends simplicity, clarity, and digital elegance to
+          create seamless online experiences. Leveraging my expertise in HTML,
+          CSS, and JavaScript, I craft bespoke websites that reflect the
+          personality and goals of each client—bringing their ideas to life with
+          authenticity and precision.
+        </div>
+      </section>
+      <section class="cta-buttons">
+        <div class="cta-button">
+          <a href="projects.html">Check Out My Work</a>
+        </div>
+        <div class="cta-button">
+          <a href="offers.html">Check Out My Offers</a>
+        </div>
+      </section>
+      <div class="whatsapp-icon">
+        <a
+          href="https://wa.me/23409016720608?text=Hi%20DIN,%20I%20would%20like%20to%20make%20an%20enquiry%20regarding%20your%20services."
+          ><img src="whatsapp icon.png" alt=""
+        /></a>
+      </div>
+    </main>
+    <footer>
+      <div class="bottom-bar">
+        <div class="footer-content">
+          <div class="logo">DIN</div>
+          <p>Design Inspire Network</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function showSidebar() {
+        const sideNav = document.querySelector(".side-nav");
+        sideNav.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sideNav = document.querySelector(".side-nav");
+        sideNav.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

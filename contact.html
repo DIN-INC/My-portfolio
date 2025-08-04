@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="side-nav">
+      <ul>
+        <li class="close-button" onclick="hideSidebar()">
+          <img src="close.png" alt="close-button" />
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li>
+          <a href="index.html"><h1>DIN</h1></a>
+        </li>
+      </ul>
+      <ul class="nav-right">
+        <li class="hideonmobile"><a href="index.html">Home</a></li>
+        <li class="hideonmobile"><a href="projects.html">Projects</a></li>
+        <li class="hideonmobile"><a href="offers.html">Offers</a></li>
+        <li class="hideonmobile"><a href="contact.html">Contact Me</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <img src="menu.png" alt="" />
+        </li>
+      </ul>
+    </nav>
+    <section>
+        <br>
+        <div class="contact-page-text">
+            <h2>Contact Me</h2>
+            <br>
+            <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
+        </div>
+        <div class="cta-buttons">
+            <div class="cta-button"><a href="https://wa.me/23409016720608?text=Hi%20DIN,%20I%20would%20like%20to%20make%20an%20enquiry%20regarding%20your%20services."> send me a message on whatsapp</a></div>
+        </div>
+    </section>
+    <script>
+      function showSidebar() {
+        const sideNav = document.querySelector(".side-nav");
+        sideNav.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sideNav = document.querySelector(".side-nav");
+        sideNav.style.display = "none";
+      }
+    </script>
+</body>
+</html>
